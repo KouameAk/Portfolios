@@ -1,0 +1,47 @@
+
+.strophe {
+    text-align:center; 
+    color : #F57631; 
+    padding : 15px 15px 15px 15px;
+    height : auto;
+    background-color: #20558a97;
+}
+.surligner {
+    color : #A22EFA; 
+    font-weight: bold; 
+    }
+.titre {
+    color : #8F4780;
+    }
+h1 {
+    color :#7C7DF8 ;
+    background-color : #A8A8A8; 
+    text-align : center ; 
+    text-decoration: underline ; 
+    font-size: 30px ;
+    font-family: fantasy ;
+    }
+h2 {
+    font-family: cursive ;
+    font-size: 20px;
+    }
+.poeme {
+    margin-left : 27%; 
+    padding : 15px 15px 15px 15px;
+    width : 59.5%; 
+    height : auto;
+    background-color : #A8A8A8; 
+    position: relative;
+    top: -260px ;
+    left: 140px;
+    }  
+.liens {
+    margin-left: 5%;
+    padding : 50px 50px 50px 30px;
+    width: 30%;
+    height : auto;
+    background-color : #A8A8A8;
+    position: relative;
+    top: -10px ;
+    left: -60px;
+    }  

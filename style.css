@@ -10,10 +10,11 @@ body {
 
 #pdp {
     width: 150px;
-    height: 150px;
+    height: auto;
     border-radius: 50%;
     border: 2px solid white;
-    margin-top: 75px;
+    margin: 20px 0 0 0;
+    z-index: 1;
 }
 
 .background-blur {
@@ -23,7 +24,7 @@ body {
     width: 100%;
     height: 60vh;
     overflow: hidden;
-    z-index: -1; 
+    z-index: -1;
 }
 
 .background-blur img {
@@ -31,47 +32,92 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-    filter: blur(2px) 
+    filter: blur(2px);
 }
-
-
-#pdp {
-    width: 150px;
-    height: auto;
-    border-radius: 50%; 
-    margin: 20px 0;
-    z-index: 1; 
-}
-
 
 .header-content {
     display: flex;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
-    position: relative; 
+    position: relative;
     z-index: 1;
     margin-top: 50px;
 }
 
+.header-content h1,
+h1,
+h2,
+h3 {
+    color: #694F8E;
+    text-decoration: underline;
+}
+
 .header-content h1 {
     font-size: 2rem;
-    color: #694F8E;
     margin: 10px 0;
 }
 
-.header-content p {
-    font-size: 1rem;
+h1 {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+h2,
+h3 {
+    margin-left: 200px;
+    padding: 15px 0;
+}
+
+.header-content p,
+p,
+#contact p {
+    color: #694F8E;
+    margin: 0 70px 10px 70px;
+}
+
+#presentation p {
+    margin: 35px 70px;
+    text-align: justify;
+}
+
+h6 {
+    margin-left: 70px;
+}
+
+#diplomes,
+#formation,
+#experiences,
+#divers {
+    background-color: #FFDFD6;
     color: #694F8E;
 }
 
-.header-content a {
-    color: rgba(255, 223, 214 1);
-    text-decoration: underline;
+#diplomes h2,
+#formation h2,
+#experiences h2,
+#divers h2 {
+    margin-bottom: 10px;
 }
-.header-content ul {
+
+#diplomes ul,
+#formation ul,
+#experiences ul,
+#divers ul {
     list-style-type: none;
-    color: rgba(255, 223, 214 1);
+    padding: 0;
+}
+
+.header-content a,
+.header-content ul,
+#diplomes ul li a,
+#formation ul li a,
+#experiences ul li a {
+    color: rgba(255, 223, 214, 1);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .header-content ul li {
@@ -127,60 +173,6 @@ nav > ul > li:active {
     transform: scale(0.95);
 }
 
-h1 {
-    color: #694F8E;
-    text-align: center;
-    text-decoration: underline;
-    padding: 15px 0;
-    margin-top: 50px;
-}
-
-h2 {
-    color: #694F8E;
-    text-decoration: underline;
-    padding: 15px 0;
-    margin-left: 200px;
-}
-
-h3 {
-    color: #694F8E;
-    margin-left: 200px;
-    text-decoration: underline;
-    padding: 15px 0;
-}
-
-h6 {
-    margin-left: 70px;
-}
-
-p {
-    margin: 0px 70px 10px 70px;
-}
-
-#presentation p {
-    margin: 35px 70px 35px 70px;
-    text-align: justify;
-}
-
-#contact p {
-    margin: 0px 70px 10px 70px;
-}
-
-#diplomes, #formation, #experiences, #divers {
-    background-color: #FFDFD6;
-    color: #694F8E;
-}
-
-#diplomes h2, #formation h2, #experiences h2, #divers h2 {
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-
-#diplomes ul, #formation ul, #experiences ul, #divers ul {
-    list-style-type: none;
-    padding: 0;
-} 
-
 #diplomes {
     background-color: #FFDFD6;
     padding: 20px;
@@ -203,15 +195,15 @@ p {
 }
 
 .diplome-content {
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    gap: 20px;
 }
 
 .diplome-content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    flex: 1; 
+    flex: 1;
 }
 
 .diplome-content ul li {
@@ -222,8 +214,6 @@ p {
 .diplome-content ul li a {
     text-decoration: none;
     color: #694F8E;
-    font-weight: bold;
-
 }
 
 .diplome-content ul li a:hover {
@@ -239,29 +229,19 @@ p {
     margin-right: 15vw;
 }
 
-
 #diplomes ul li,
 #formation ul li,
 #experiences ul li {
     margin: 10px 0;
 }
 
-#diplomes ul li a,
-#formation ul li a,
-#experiences ul li a {
-    margin-left: 120px;
-    text-decoration: none;
-    color: #694F8E;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
 #diplomes ul li a:hover,
 #formation ul li a:hover,
 #experiences ul li a:hover {
     color: #B692C2;
-    text-decoration: underline;
 }
+
+/* Additional styles from user feedback */
 
 #bac-scientifique img {
     width: 100px;
@@ -285,7 +265,7 @@ p {
     background-color: #FFDFD6;
     border-radius: 8px;
     border: 1px solid #694F8E;
-    text-align: left ;
+    text-align: left;
 }
 
 #competences h1 {
@@ -294,8 +274,8 @@ p {
     margin-bottom: 20px;
 }
 
-#competences h2{
-    margin: 0%;
+#competences h2 {
+    margin: 0;
 }
 
 .flex-container {
@@ -362,14 +342,13 @@ p {
 #divers ul img {
     width: 60px;
     height: auto;
-
 }
 
 #divers ul ul {
     list-style-type: circle;
     margin-left: 20px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 100px;
     margin-bottom: 10px;
 }
@@ -377,7 +356,6 @@ p {
 #divers li {
     margin-bottom: 10px;
     font-size: 16px;
-    
 }
 
 #contact {
@@ -439,13 +417,13 @@ p {
 }
 
 .social-media-links img {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     transition: transform 0.3s ease;
 }
 
 .social-media-links img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 footer {
@@ -466,7 +444,6 @@ footer {
 .footer-section {
     flex: 1;
     min-width: 200px;
-
 }
 
 .footer-section h3 {
@@ -502,7 +479,7 @@ footer {
     color: #B692C2;
 }
 
-.social-media-links li img{
+.social-media-links li img {
     margin-top: 10px;
 }
 

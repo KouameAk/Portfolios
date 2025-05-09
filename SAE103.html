@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé du Rapport SAE 1.03</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sae103-carousel.css" />
 </head>
 <body>
     <nav>
@@ -109,8 +110,10 @@
                 <img src="./Images/103/Capture d'écran 2025-05-09 140947.png" alt="Image 4" class="carousel-image" />
             </div>
         </section>
-        <button class="carousel-arrow left-arrow" id="prevBtn" aria-label="Image précédente">&#9664;</button>
-        <button class="carousel-arrow right-arrow" id="nextBtn" aria-label="Image suivante">&#9654;</button>
+        <div class="carousel-controls">
+            <button id="prevBtn" class="carousel-button">Précédent</button>
+            <button id="nextBtn" class="carousel-button">Suivant</button>
+        </div>
     </main>
 
     <script src="sae103-carousel.js"></script>

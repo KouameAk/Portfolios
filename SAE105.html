@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>SAE 105 - Analyse de fichiers volumineux</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="diplome.html">Diplômes</a></li>
+            <li><a href="experiences.html">Expériences</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+  <h1>SAE 105 - Analyse de fichiers volumineux</h1>
+
+  <h2>Présentation du projet</h2>
+  <p>
+    Dans le cadre de notre formation en Réseaux et Télécommunications, nous avons réalisé un projet technique intitulé SAE 105.
+    Ce projet visait à concevoir un outil d'analyse permettant de repérer les fichiers les plus volumineux présents dans
+    un dossier donné sur un ordinateur. Ce type d'outil est utile aux administrateurs système, notamment lorsqu'il s'agit
+    de libérer rapidement de l'espace disque sur des postes utilisateurs ou des serveurs.
+  </p>
+  <p>
+    L'outil repose sur une série de scripts Python et PowerShell, avec une interface graphique interactive permettant
+    de visualiser les fichiers détectés, de sélectionner ceux à supprimer et de générer automatiquement un script de suppression.
+  </p>
+
+  <h2>Objectifs pédagogiques</h2>
+  <p>
+    Ce projet nous a permis d'appliquer des compétences en :
+  </p>
+  <ul>
+    <li>Programmation Python, avec gestion de fichiers et traitement de données</li>
+    <li>Utilisation de la bibliothèque PyQt5 pour créer des interfaces graphiques</li>
+    <li>Manipulation de structures JSON pour sauvegarder les résultats</li>
+    <li>Écriture de scripts PowerShell pour automatiser des tâches système</li>
+    <li>Réflexion sur l'ergonomie et l'utilisabilité d'un outil destiné à des techniciens</li>
+  </ul>
+
+  <h2>Détails du fonctionnement</h2>
+  <p>
+    Le programme débute par l'ouverture d'une fenêtre de sélection de dossier via PyQt5. Une fois le répertoire choisi,
+    un script Python explore récursivement tous les fichiers du dossier et de ses sous-dossiers. Il établit une liste
+    des fichiers les plus gros (jusqu'à 100), enregistre les données dans un fichier JSON, puis un autre script
+    se charge de les afficher sous forme de graphique circulaire ("camembert").
+  </p>
+  <p>
+    Chaque portion du graphique correspond à un fichier. Des légendes avec cases à cocher permettent de sélectionner
+    les fichiers à supprimer. En validant, un bouton génère un script PowerShell personnalisé qui effectue la suppression
+    des fichiers cochés après confirmation.
+  </p>
+
+  <h2>Résultats obtenus</h2>
+  <p>
+    L'outil est fonctionnel sur Windows et peut être adapté à Linux ou MacOS. Il permet une gestion simple des fichiers lourds
+    et peut être utilisé dans un contexte professionnel pour l'administration de parc informatique.
+    Le projet nous a permis de mieux comprendre les besoins d'un technicien système et de produire une solution concrète et utile.
+  </p>
+    <p>
+        Nous avons également appris à travailler en équipe, à gérer un projet de A à Z et à respecter des délais de livraison.
+        Ce projet a été une expérience enrichissante qui nous a permis de mettre en pratique nos compétences techniques
+        tout en développant notre sens de l'organisation et du travail collaboratif effectué avec mon binôme, Matthieux Dejoie.
+    </p>
+  <h2>Illustrations</h2>
+  <p>
+    Voici quelques images du projet en cours de réalisation : montages, tests et interfaces graphiques.
+  </p>
+  <p><img src="./Images/Proj_cam2.png" alt="photo d'un camembert de fichier">: Sélection du dossier dans l'interface graphique</p>
+  <p><img src="./Images/Proj_camls.png" alt="photo d'une liste de fichier"> Résultat du camembert généré avec PyQt5.QtChart</p>
+  <p><img src="./Images/Proj_camsup.png" alt="photode l'interface de suppression"> Script PowerShell généré automatiquement pour supprimer les fichiers]</p>
+
+</body>
+<footer>
+    <div class="footer-container">
+        
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <p>Ce site est un portfolio en ligne pour présenter les compétences et projets de Akaza Kouame.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Liens utiles</h3>
+            <ul>
+                <li><a href="#presentation">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="diplome.html">Diplomes</a></li>
+                <li><a href="experiences.html">Projets</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email : <a href="mailto:akazakouame1@gmail.com">akazakouame1@gmail.com</a></p>
+            <p>Téléphone : 07 67 63 48 95</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Akaza Kouame | Tous droits réservés.</p>
+    </div>
+</footer>
+</html>

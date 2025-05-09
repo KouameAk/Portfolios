@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Résumé du Rapport SAE 1.03</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="diplome.html">Diplômes</a></li>
+            <li><a href="experiences.html">Expériences</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h1>Résumé du Rapport SAE 1.03 - Réseaux et Télécommunications</h1>
+  <p>
+    Ce rapport est le fruit d'un projet mené dans le cadre du BUT Réseaux et Télécommunications. Il présente les travaux réalisés
+    pour découvrir, configurer et analyser un dispositif de transmission de données en environnement réel. L'accent a été mis sur
+    la mise en place de câblages, la mesure des performances Wi-Fi, l'analyse des débits, la couverture réseau, ainsi que la simulation
+    via Packet Tracer.
+  </p>
+
+  <h2>1. Câblages réalisés</h2>
+  <p>
+    Le projet débute par la création de connecteurs RJ45 mâles et noyaux selon la norme T-568B. Nous avons appris à dénuder les câbles, aligner
+    les paires de fils de manière rigoureuse, sertir les connecteurs et vérifier la continuité avec un testeur (CableMaster 200).
+    Cette phase garantit la qualité des connexions physiques dans l'environnement réseau.
+  </p>
+
+  <h2>2. Analyse des mesures PoE sur switch Cisco</h2>
+  <p>
+    Nous avons étudié le fonctionnement du Power over Ethernet sur un switch Cisco WS-C2960-24PC-LV06, utilisant les normes IEEE 802.3af/at/bt.
+    Ce switch peut délivrer jusqu'à 90 W, ce qui permet d'alimenter plusieurs équipements en même temps comme des points d'accès et caméras IP.
+    Nos mesures ont confirmé une alimentation stable (15,6 W observés) et conforme aux normes, prouvant la robustesse de l'alimentation PoE.
+  </p>
+
+  <h2>3. Mesures de puissance des réseaux sans fil</h2>
+  <p>
+    Des mesures ont été réalisées sur deux réseaux Wi-Fi : Grx_802.11g (2,4 GHz) et 802.11a (5 GHz). Elles ont mis en évidence les pertes de signal
+    en fonction de la distance et des obstacles. Par exemple, en 802.11g, le signal chute de -28 dBm à -78 dBm entre 10 et 40 mètres.
+    En 802.11a, les pertes sont plus prononcées avec une atteinte de -100 dBm à distance. Les matériaux comme le béton et le métal accentuent
+    ces pertes.
+  </p>
+
+  <h2>4. Heatmaps des réseaux Wi-Fi</h2>
+  <p>
+    Les heatmaps des salles C100, C101 et C102 montrent que le réseau 802.11g offre une couverture plus étendue que le 802.11a.
+    En 2,4 GHz, la pénétration dans les murs est meilleure, offrant une couverture homogène. À l'inverse, la bande 5 GHz du 802.11a
+    présente des zones froides dans certaines salles, malgré un meilleur débit théorique à courte portée.
+  </p>
+
+  <h2>5. Débits descendants selon réception et distance</h2>
+  <p>
+    Les mesures de débit montrent que le 802.11a offre un débit élevé à courte distance (11,5 Mbps) mais chute rapidement.
+    Le 802.11g est plus stable avec un débit autour de 2,5 Mbps, même à distance. Ainsi, pour les environnements à obstacles,
+    le 802.11g est préférable.
+  </p>
+
+  <h2>6. Informations du contrôleur Wi-Fi</h2>
+  <p>
+    Deux clients étaient connectés : un PC portable et un téléphone. Les points d'accès actifs étaient répartis sur les bandes 2,4 GHz
+    et 5 GHz. Le contrôleur Wi-Fi fournit les adresses IP/MAC, révélant une gestion efficace du réseau et une répartition
+    cohérente des connexions.
+  </p>
+
+  <h2>7. Simulation Packet Tracer</h2>
+  <p>
+    Une simulation a été effectuée avec Packet Tracer pour reproduire un réseau réel avec serveur DHCP, DNS et Web.
+    Les appareils pouvaient accéder à un site via nom de domaine. Cela nous a permis de valider la configuration réseau
+    et le fonctionnement du routage inter-salles.
+  </p>
+
+  <h2>8. Heatmaps du bâtiment C</h2>
+  <p>
+    Les heatmaps du rez-de-chaussée et du premier étage montrent une bonne couverture en 2,4 GHz autour des points d'accès.
+    En revanche, en 5 GHz, les zones éloignées des points d'accès présentent une couverture faible voire inexistante.
+    Des améliorations sont suggérées, comme repositionner les AP et gérer les canaux pour éviter les interférences.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    Ce projet a renforcé nos compétences techniques sur les réseaux Wi-Fi, les mesures radio, la topologie réseau,
+    et l'utilisation d'outils comme Packet Tracer. Il souligne l'importance d'une bonne planification du déploiement Wi-Fi
+    et d'un ajustement fin des paramètres (positionnement, puissance, canaux).
+    Il montre aussi que des solutions comme les répéteurs ou des points d'accès supplémentaires peuvent considérablement
+    améliorer la couverture et la qualité de service.
+  </p>
+
+  <p><strong>Temps estimé :</strong> 24 heures de projet.</p>
+
+        <section class="carousel" aria-label="Carrousel d'images du projet">
+            <div class="carousel-images">
+                <img src="image1.jpg" alt="Image 1" class="carousel-image" />
+                <img src="image2.jpg" alt="Image 2" class="carousel-image" />
+                <img src="image3.jpg" alt="Image 3" class="carousel-image" />
+                <img src="image4.jpg" alt="Image 4" class="carousel-image" />
+            </div>
+        </section>
+        <div class="carousel-controls">
+            <button class="carousel-button" id="prevBtn" aria-label="Image précédente">Précédent</button>
+            <button class="carousel-button" id="nextBtn" aria-label="Image suivante">Suivant</button>
+        </div>
+    </main>
+
+    <script src="sae103-carousel.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <p>Ce site est un portfolio en ligne pour présenter les compétences et projets de Akaza Kouame.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Liens utiles</h3>
+            <ul>
+                <li><a href="#presentation">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="diplome.html">Diplomes</a></li>
+                <li><a href="experiences.html">Projets</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email : <a href="mailto:akazakouame1@gmail.com">akazakouame1@gmail.com</a></p>
+            <p>Téléphone : 07 67 63 48 95</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Akaza Kouame | Tous droits réservés.</p>
+    </div>
+</footer>
+</html>

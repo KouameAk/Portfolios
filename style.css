@@ -1,4 +1,4 @@
-body {
+ body {
     font-family: Arial, sans-serif;
     background-color: #FFDFD6;
     display: flex;
@@ -106,7 +106,8 @@ h6 {
 #experiences ul,
 #divers ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 20px;
+    margin-left: 20px;
 }
 
 .header-content a,
@@ -114,10 +115,18 @@ h6 {
 #diplomes ul li a,
 #formation ul li a,
 #experiences ul li a {
-    color: rgba(255, 223, 214, 1);
+    color: #694F8E;
     text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s ease;
+}
+
+.header-content a:hover,
+#diplomes ul li a:hover,
+#formation ul li a:hover,
+#experiences ul li a:hover {
+    color: #B692C2;
+    text-decoration: underline;
 }
 
 .header-content ul li {
@@ -286,6 +295,16 @@ nav > ul > li:active {
     flex-wrap: wrap;
 }
 
+#competences-but1 .flex-container {
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+#competences-but1 h1 {
+    text-align: center;
+}
+
 .flex-item {
     flex: 1;
     min-width: 300px;
@@ -303,6 +322,9 @@ nav > ul > li:active {
     margin-bottom: 15px;
     text-align: center;
     text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .flex-item ul {
@@ -431,13 +453,25 @@ footer {
     color: white;
     padding: 20px;
     font-size: 14px;
+    position: relative;
+    z-index: 1000;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+.footer-section {
+    color: white !important;
+}
+
+.footer-section * {
+    color: white !important;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     flex-wrap: wrap;
 }
 
